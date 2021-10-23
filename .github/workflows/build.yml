@@ -47,7 +47,6 @@ jobs:
           GITHUB_REPO: github.com/tonsliy/tangpangzi.github.io
         # 将编译后的博客文件推送到指定仓库
         run: |
-          cp ./CNAME ./public/CNAME
           cd ./public && git init -b gh-pages && git add .
           git config user.name "tonsliy"
           git config user.email "tonsliy@163.com"
