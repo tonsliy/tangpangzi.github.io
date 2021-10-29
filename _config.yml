@@ -4,8 +4,8 @@
 
 # Site
 title: 唐胖子
-subtitle: '还没有'
-description: '不知道说啥'
+subtitle: '学习是一种信仰'
+description: '一个专注前端的技术博客'
 keywords:
 author: 唐胖子
 language: zh-CN
@@ -97,7 +97,8 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+# theme: landscape
+theme:  anatole
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
@@ -106,3 +107,25 @@ deploy:
   repo: git@github.com:tonsliy/tangpangzi.github.io.git
   branch: main
 
+live2d:
+  enable: true
+  scriptFrom: local
+  pluginRootPath: live2dw/
+  pluginJsPath: lib/
+  pluginModelPath: assets/
+  tagMode: false
+  debug: false
+  model:
+    use: live2d-widget-model-tororo
+  display:
+    position: left
+    width: 200
+    height: 400
+    hOffset: 5
+    vOffset: -38
+  mobile:
+    show: false
+    scale: 0.2
+  react:
+    opacityDefault: 0.8
+    opacityOnHover: 0.2
