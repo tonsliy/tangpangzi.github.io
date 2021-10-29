@@ -1,0 +1,17 @@
+<!--
+ * @Author: tangz
+ * @Date: 2021-10-07 19:53:16
+ * @LastEditors: tangz
+ * @LastEditTime: 2021-10-29 14:40:02
+ * @Description: file content
+-->
+<aside class="catalog-container">
+  <div class="toc-main">
+    <strong class="toc-title">大纲</strong>
+    <% if (toc(page.content) !== ""){ %>
+    <%- toc(page.content, { "class": "toc-nav", "list_number": false }) %>
+    <% } else { %>
+    <ol class="nav"><%= __('none') %></ol>
+    <% } %>
+  </div>
+</aside>
